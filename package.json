@@ -1,5 +1,8 @@
 {
-  "name": "@partypoison-re/react-scroll",
+  "name": "@partypoison-re/react-select",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/partypoison-re"
+  },
   "version": "0.0.1",
   "description": "React select component",
   "scripts": {
