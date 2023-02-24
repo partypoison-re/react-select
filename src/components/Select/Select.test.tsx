@@ -5,6 +5,8 @@ import Select from './Select'
 
 describe('Select', () => {
     test('Render the Select component', () => {
-        render(<Select placeholder='Hello world!' />)
+        render(<Select placeholder='Hello world!' onChange={(value) => console.log(value)}>
+            Test
+        </Select>)
     })
 })

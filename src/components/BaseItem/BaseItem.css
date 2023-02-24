@@ -1,0 +1,10 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.item:hover, .item.active {
+    background-color: #E4E4E4;
+}
