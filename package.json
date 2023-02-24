@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/partypoison-re"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React select component",
   "scripts": {
     "rollup": "rollup -c",
