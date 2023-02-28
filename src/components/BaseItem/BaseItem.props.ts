@@ -5,10 +5,11 @@ export interface BaseItemProps
     HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
   > {
-  label: string;
-  value: any;
-  icon?: string;
+  label: string
+  value: any
+  icon?: string
   color?: string
-  backgroundColor?: string;
+  backgroundColor?: string
   rightIcon?: boolean
+  active?: boolean
 }

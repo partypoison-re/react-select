@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import { BaseItemProps } from "./BaseItem.props";
+import React, {useContext, useEffect} from 'react'
+import {BaseItemProps} from "./BaseItem.props";
 import './BaseItem.css'
-import { SelectContext } from "../Select/SelectContext";
+import {SelectContext} from '../Select/SelectContext';
 
 const BaseItem = ({
                       label,
@@ -9,10 +9,17 @@ const BaseItem = ({
                       icon,
                       color,
                       backgroundColor,
+                      active = false,
                       className,
                       ...props
                   }: BaseItemProps) => {
     const {setValue, labelValue, setLabelValue, setState} = useContext(SelectContext)
+
+    useEffect(() => {
+        if (active) {
+            setLabelValue(label)
+        }
+    }, [])
 
     const select = (): void => {
         setValue(value)
