@@ -1,11 +1,11 @@
-.select-container {
+.re-select-container {
     width: 100%;
     position: relative;
     color: #000;
     font-size: 16px;
 }
 
-.select-container .wrapper-main {
+.re-select-container .re-wrapper-main {
     display: flex;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -17,26 +17,26 @@
     transition: 0.3s ease all;
 }
 
-.select-container .wrapper-main.select-open {
+.re-select-container .re-wrapper-main.select-open {
     border-bottom: none;
     border-bottom-left-radius: initial;
     border-bottom-right-radius: initial;
 }
 
-.select-container .wrapper-main {
+.re-select-container .re-wrapper-main .re-value{
     color: #DE2A2A;
 }
 
-.select-container .wrapper-main .info {
+.re-select-container .re-wrapper-main .re-info {
     display: flex;
 }
 
-.select-container .wrapper-main .info .placeholder {
+.re-select-container .re-wrapper-main .re-info .re-placeholder {
     color: #666666;
     margin-right: 5px;
 }
 
-.select-container .items {
+.re-select-container .re-items {
     position: absolute;
     top: 49px;
     left: 0;
@@ -50,12 +50,12 @@
     transform: scaleY(0);
 }
 
-.select-container .items.hide {
+.re-select-container .re-items.hide {
     animation: growUp 200ms ease-in-out forwards;
     transform-origin: top;
 }
 
-.select-container .items.show {
+.re-select-container .re-items.show {
     animation: growDown 200ms ease-in-out forwards;
     transform-origin: top;
 }

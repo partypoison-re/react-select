@@ -31,17 +31,17 @@ const Select = ({
         }
     }
 
-    return <div className={'select-container'} {...props}>
-        <div className={`wrapper-main ${state === 'show' ? 'select-open' : ''}`} onClick={() => openDropDown()}>
-            <div className={'info'}>
-                {placeholder ? <div className="placeholder">{placeholder}</div> : ''}
-                {labelValue ? <div className="value">{labelValue}</div> : ''}
+    return <div className={'re-select-container'} {...props}>
+        <div className={`re-wrapper-main ${state === 'show' ? 'select-open' : ''}`} onClick={() => openDropDown()}>
+            <div className={'re-info'}>
+                {placeholder ? <div className="re-placeholder">{placeholder}</div> : ''}
+                {labelValue ? <div className="re-value">{labelValue}</div> : ''}
             </div>
-            <div className="arrow">
+            <div className="re-arrow">
                 {arrowIcon ? <img src={arrowIcon} alt="arrow"/> : <img src={arrow} alt="arrow"/>}
             </div>
         </div>
-        <div className={`items ${state === 'show' ? 'show' : ''} ${state === 'hide' ? 'hide' : ''}`}>
+        <div className={`re-items ${state === 'show' ? 'show' : ''} ${state === 'hide' ? 'hide' : ''}`}>
             <SelectContext.Provider value={{setValue, labelValue, setLabelValue, setState}}>
                 {children}
             </SelectContext.Provider>
