@@ -1,11 +1,11 @@
-.container {
+.select-container {
     width: 100%;
     position: relative;
     color: #000;
     font-size: 16px;
 }
 
-.wrapper-main {
+.select-container .wrapper-main {
     display: flex;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -17,44 +17,45 @@
     transition: 0.3s ease all;
 }
 
-.wrapper-main.select-open {
+.select-container .wrapper-main.select-open {
     border-bottom: none;
     border-bottom-left-radius: initial;
     border-bottom-right-radius: initial;
 }
 
-.wrapper-main {
+.select-container .wrapper-main {
     color: #DE2A2A;
 }
 
-.wrapper-main .info {
+.select-container .wrapper-main .info {
     display: flex;
 }
 
-.wrapper-main .info .placeholder {
+.select-container .wrapper-main .info .placeholder {
     color: #666666;
     margin-right: 5px;
 }
 
-.items {
+.select-container .items {
     position: absolute;
     top: 49px;
     left: 0;
     right: 0;
     font-size: 16px;
     border: 1px solid #E4E4E4;
+    background-color: #fff;
     border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transform: scaleY(0);
 }
 
-.items.hide {
+.select-container .items.hide {
     animation: growUp 200ms ease-in-out forwards;
     transform-origin: top;
 }
 
-.items.show {
+.select-container .items.show {
     animation: growDown 200ms ease-in-out forwards;
     transform-origin: top;
 }

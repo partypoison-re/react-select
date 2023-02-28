@@ -31,7 +31,7 @@ const Select = ({
         }
     }
 
-    return <div className={'container'} {...props}>
+    return <div className={'select-container'} {...props}>
         <div className={`wrapper-main ${state === 'show' ? 'select-open' : ''}`} onClick={() => openDropDown()}>
             <div className={'info'}>
                 {placeholder ? <div className="placeholder">{placeholder}</div> : ''}

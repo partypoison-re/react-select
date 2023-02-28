@@ -27,7 +27,7 @@ const BaseItem = ({
         setState('hide')
     }
 
-    return <div className={`item ${labelValue === label ? 'active' : ''}`} {...props} onClick={() => select()}>
+    return <div className={`re-select-base-item ${labelValue === label ? 'active' : ''}`} {...props} onClick={() => select()}>
         <div className="item-label">{label}</div>
     </div>
 }
